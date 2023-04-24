@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+        /*background: #F5F5F5;*/
+    header{
+        background: rgba(217, 217, 217, 0.1);
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 63px;
+        max-height: 196px;
+    }
+    header nav a{
+        text-decoration: none;
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 51px;
+        color: #7A7070;
+        margin: 0 42px;
+    }
+    header nav a:hover,
+    header nav a.active{
+        color: #3D6FB4;
+    }
+    .container-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-box article h2{
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 101px;
+        color: #000000;
+        margin-bottom: 50px;
+    }
+    .container-box article p{
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 51px;
+        color: #000000;
+    }
+    .container-box .first_section{
+        width: 50vw;
+        max-width: 607px;
+    }
+    .container-box article button{
+        background: #ECBCBC;
+        width: 150px;
+        height: 50px;
+        border: 1px solid #000000;
+        border-radius: 30px;
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+    .container-box article button.btn_1{
+        background: transparent;
+        margin-right: 36px;
+    }
+    .container-box article button.btn_1:hover,
+    .container-box article button:hover{
+        background: #3D6FB4;
+        color: #ffffff;
+    }
+</style>
+<body>
+<header>
+    <a href="#">
+       <img src="img/stock-vector-augmented-building-city-icon-removebg-preview%201.png" alt="Man and woman">
+    </a>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">FAQs</a>
+      <a href="#">Contact</a>
+    </nav>
+</header>
+<main class="container-box">
+    <div class="first_section">
+        <article>
+            <h2>UP, UP, AND AWAY!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet assumenda aut cumque deleniti deserunt</p>
+            <button class="btn_1">watch video</button>
+            <button>learn more</button>
+        </article>
+    </div>
+    <img src="img/stock-vector-superhero-couple-man-and-woman-removebg-preview%201.png" alt="Man and woman">
+</main>
+</body>
+</html>
