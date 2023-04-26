@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+    }
+    .container{
+      padding: 15px;
+      color: #fff;
+      text-align: center;
+    }
+    .container .block_a{
+      background-color: blue;
+      height: 20vh;
+    }
+    .container .center_block{
+      display: flex;
+      height: 80vh;
+    }
+    .container .center_block .first_block{
+      width: 70vw;
+    }
+    .container .center_block .second_block{
+      width: 30vw;
+      background-color: red;
+    }
+    .container .center_block .first_block .block_b{
+      height: 50%;
+      background-color: chartreuse;
+    }
+    .container .center_block .first_block .bottom_block{
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+    .container .center_block .first_block .bottom_block div{
+      width: calc(100% /3);
+      height: 50%;
+    }
+    .container .center_block .first_block .bottom_block .block_c{
+      background-color: black;
+    }
+    .container .center_block .first_block .bottom_block .block_d{
+      background-color: midnightblue;
+    }
+    .container .center_block .first_block .bottom_block .block_b{
+      background-color: saddlebrown;
+    }
+    @media screen and (max-width: 767px) {
+      .container .center_block .first_block,
+      .container .center_block .second_block {
+        width: 100vw;
+      }
+      .container .center_block {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="block_a">A</div>
+  <div class="center_block">
+    <div class="first_block">
+      <div class="bottom_block">
+        <div class="block_b">B</div>
+        <div class="block_c">C</div>
+        <div class="block_d">D</div>
+        <div class="block_d">E</div>
+        <div class="block_b">F</div>
+        <div class="block_c">G</div>
+      </div>
+    </div>
+    <div class="second_block">H</div>
+  </div>
+</div>
+</body>
+</html>
